@@ -4,10 +4,12 @@
 }
 
 .maxWidthWrapper {
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width : 65% ;
 }
 
 .title {
@@ -24,7 +26,24 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top:15%;
+  left:50%;
+  bottom: 5%; /* au lieu  de donner un  height on  ajoute un bottom de 5% pour avoir un  height computed dynamicaly */
+  margin-left: 32px; /* petite astuce pour  avoir un gap de valeur fixed meme sur des écrans large*/
+  /* height: 500px; */
+  min-height: 500px;
 }
 
 .controlColumn {
+  width : 50%;
+}
+
+.perspectiveEffect{
+  position: fixed;
+  top :60% ;
+  left: 0%;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg,20%,86%);
 }
